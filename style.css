@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-    --color-blue:#f3f3f3;
-    --color-darkblue:#796e8;
-    --color-darkblue-alpha: rgba(13,138,187,0,8);
-    --color-green:#21eb6e;
+  --color-blue:  #f3f3f3;
+  --color-darkblue: #796e8;
+  --color-darkblue-alpha: rgba(13, 138, 187, 0, 8);
+  --color-green: #21eb6e;
 }
 
-*, *::before, *::after{
-    box-sizing: border-box;
+*, *::before,  *::after{ 
+    box-sizing:   border-box;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-blue);
-    margin: 0;
-    padding: 1rem;
+    font-family:  'Poppins', sans-serif;
+    font-size:  1rem;
+    font-weight:  400;
+    line-height:   1.4; 
+    color:  var(--color-blue);
+    margin:  0;
+    padding:  1rem;
 }
 
-body :before{
- position: fixed;
+body :before{ 
+   position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient(215deg,rgba(75,113,17,o,8)rgba(124,192,147,0,8), url(./developers.jpg));
+    background-image: linear-gradient(215deg, rgba(75, 113, 17, 0, 8)rgba(124, 192, 147, 0, 8), url(./developers.jpg) ); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}  
+    background-position: center; 
+}   
 
 #title{
-    color: violet(--color-green);
+ color: violet(--color-green);
     font-weight: 600;
     font-size: 4rem;
 }
@@ -44,17 +44,17 @@ body :before{
 h1{
     font-weight: 400;
     line-height: 1.2;
-
 }
+
 
 p{
     font-size: 1.125rem;
- 
 }
+
 
 h1,p{
     margin-top: 0;
-    margin-bottom: o.4rem;
+    margin-bottom: 0.4rem;
 }
 
 label{
