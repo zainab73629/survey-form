@@ -21,9 +21,8 @@ body{
     padding: 1rem;
 }
 
-body: :before{
-    content: ''
-    position: fixed;
+body :before{
+ position: fixed;
     top: 0;
     left: 0;
     height: 100%;
