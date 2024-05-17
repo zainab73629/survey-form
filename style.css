@@ -21,7 +21,7 @@ body {
   padding: 1rem;
 }
 
-body:before {
+body::before {
   position: fixed;
   top: 0;
   left: 0;
@@ -96,7 +96,6 @@ textarea {
 }
 
 #quest {
-  color: rgba(241,191,98);
   font-size: 1.5rem;
 }
 
@@ -106,9 +105,9 @@ form {
 }
 
 @media (min-width: 480px) {
-  form{
-     padding: 2.5rem;
-  }
+  form {
+      padding: 2.5rem;
+    }
 }
 
 .form-group {
@@ -156,7 +155,6 @@ form {
   width: 100%;
   padding: 0.5rem 0.75rem;
   background: var(--color-green);
-  color: inherit;
   border-radius: 15px;
   cursor: pointer;
   outline: none;
@@ -167,13 +165,13 @@ form {
 }
 
 @media (min-width: 576px) {
-  .container{
+  .container {
       max-width: 540px;
-  }
+    }
 }
 
 @media (min-width: 800px) {
-  .container{
+  .container {
       max-width: 760px;
-  }
+    }
 }
