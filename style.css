@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
-  --color-blue: #f3f3f3;
-  --color-darkblue: #796e8;
-  --color-darkblue-alpha: rgba(13, 138, 187, 0, 8);
+  --color-darkblue: #796e;
   --color-green: #21eb6e;
 }
 
-*, *::before,  *::after { 
+*,
+*::before,
+*::after { 
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ body {
   padding: 1rem;
 }
 
-body :before { 
+body:before { 
   position: fixed;
   top: 0;
   left: 0;
@@ -52,7 +52,8 @@ p {
 }
 
 
-h1,p {
+h1,
+p {
   margin-top: 0;
   margin-bottom: 0.4rem;
 }
@@ -64,7 +65,10 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input,button,select,textarea {
+input,
+button,
+select,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -133,9 +137,10 @@ form {
 .formcontrol:focus {
   border-color: blue;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0 255);
 }
-.inpurRadio,.checkbox {
+
+.inpurRadio,
+.checkbox {
   display: inline-block;
   margin-right: 0.625rem;
   min-height: 1.25rem;
