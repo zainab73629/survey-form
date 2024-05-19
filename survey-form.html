@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
+    <h1 id="title">
         survey form
     </h1>
-    <p>
+    <p id="description">
         Thank you from your feedback.
     </p>
-    <form>
+    <form id="survey-form">
         <fieldset>
             <legend>survey form</legend>
             <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
             </div>
             <div class="form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form">
-                <label for="age">Age:</label>
-                <input type="number" id="age" min="18" max="24" placeholder="Enter your age">
+                <label id="number-label" for="age">Age:</label>
+                <input type="number" id="number" min="18" max="24" placeholder="Enter your age">
                 <div class="form-group">
                     <label for="number"><address></label>
                     <input type="number" name="phone" id="phone" class="formcontrol" placeholder="Enter your phone number" required>
@@ -46,11 +46,8 @@
                  </div>
                  </div>
                  <div class="form">
-                    <label>Gender</label>
-                    <label for="male">
-                        <input type="radio" id="male" name="action">Male</input>
-                    </label>
-                 </div>
+                    
+                    
                  <div class="form-group">
                     <p id="quest">Which option best describe your current role?</p>
                     <select name="role" id="dropdown" class="forControl" required>
@@ -63,38 +60,30 @@
                      </div>
                      <div class="form-group">
                         <p id="quest">How you come to know about WEBHUB</p>
-                        <label for=""></label>
-                        <input type="radio" name="source" value="friends" class="inputRadio" checked>friends
-                    </label>
-                    <label for="">
-                        <input type="radio" name="source" value="tv-ads" class="inputRadio">TV Ads
-                        </label>
-                        <label for="">
-                            <input type="radio" name="source" value="social-media" class="inputRadio">Social Media
-                            </label>
-                            <label for="">
-                                <input type="radio" name="source" value="newspapers" class="inputRadio">Newspapers
-                                </label>
-                                <label for="">
-                                    <input type="radio" name="source" value="other" class="inputRadio">other
-                                </label>
-                                <div class="form-group">
-                                    <p id="quest">Would you like to see improved</p>
-                                    <label for="">
-                                        <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Back-end Developer
-                                        </label>
-                                        <label for="">
-                                            <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev">Front- end Developer
-                                        </label>
-                                        <label for="">
-                                            <input type="checkbox" name="prefer" class="checkbox" value="app-dev">Android App Developer
-                                        </label>
-                                        <label for=''>
-                                            <input type="checkbox" name="prefer" class="checkbox" vlaue="soft-engineerinf">Software Engineering
-                                         </label>
-                                         <label for="">
-                                            <input type="checkbox" name="prefer" class="checkbox" value="other">Other
-                                         </label>
+    <label>Gender:</label>
+    <label for="male">
+        <input type="radio"  id="male" name="action" value="male">Male</input>
+ </label>
+ <label for="female">
+     <input type="radio" id="female"name="action" value="female">Female</input>
+     </label>
+     <label for="other">
+     <input type="radio" id="other" name="action"value="other">Other</input>
+     </label>                                         
+  <label>Which computer skills do you have?
+      </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="front">Frontend web development</input>
+          </label>
+           </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="back">Backend web development</input>
+          </label> </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="office">Office package</input>
+          </label>
+
+
                                          <div class="form-group">
                                             <p id="quest">Give us your feedback</p>
                                             <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here..."></textarea>
@@ -104,18 +93,3 @@
                                          </div>
 
 
-                            
-                            
-
-                    
-                            </div>  
-
-            
-
-
-        </fieldset>
-    </form>
-    
-    
-</body>
-</html>
