@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">
+        survey form
+    </h1>
+    <p id="description">
+        Thank you from your feedback.
+    </p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>survey form</legend>
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="form">
+                <label id="number-label" for="age">Age:</label>
+                <input type="number" id="number" min="18" max="24" placeholder="Enter your age"/>
+                <div class="form-group">
+                    <label for="number"><address></label>
+                    <input type="number" name="phone" id="phone" class="formcontrol" placeholder="Enter your phone number" required/>
+                 </div>
+                 <div class="form-group">
+                    <label for="address">Name</label>
+                    <input type="text" name="address" id="address" class="formcontrol" placeholder="Enter your address" required/>
+                 </div>
+                 <div class="form">
+                    <label for="select">which option describes you?</label>
+                    <select name="select" id="select">
+                        <option value="student">Student</option>
+                        <option value="intern">Intern</option>
+                        <option value="prpfessional">Professional</option>
+                        <option value="other">Other</option>
+                    </select>
+                 </div>
+                 </div>
+                 <div class="form">
+                    
+                    
+                 <div class="form-group">
+                    <p id="quest">Which option best describe your current role?</p>
+                    <select name="role" id="dropdown" class="forControl" required>
+                    <option value="disabled selescted>"Select current role></option>
+                    <option value="student">Student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="job">job</option>
+                    <option value="other">other</option>
+                      </select>
+                     </div>
+                     <div class="form-group">
+                        <p id="quest">How you come to know about WEBHUB</p>
+    <label>Gender:</label>
+    <label for="male">
+        <input type="radio"  id="male" name="action" value="male">Male</input>
+ </label>
+ <label for="female">
+     <input type="radio" id="female"name="action" value="female">Female</input>
+     </label>
+     <label for="other">
+     <input type="radio" id="other" name="action"value="other">Other</input>
+     </label>                                         
+  <label>Which computer skills do you have?
+      </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="front">Frontend web development</input>
+          </label>
+           </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="back">Backend web development</input>
+          </label> </label>
+      <label for="inp1">
+          <input type="checkbox" name="inp" value="office">Office package</input>
+          </label>
+
+
+                                         <div class="form-group">
+                                            <p id="quest">Give us your feedback</p>
+                                            <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here..."></textarea>
+                                         </div>
+                                         <div class="form-group">
+                                            <button type="submit" id="submit" class="btn">Submit</button>
+                                         </div>
+
+
